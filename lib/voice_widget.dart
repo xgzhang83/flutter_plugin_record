@@ -221,12 +221,21 @@ class _VoiceWidgetState extends State<VoiceWidget> {
            print("update------onLongPressMoveUpdate");
          },
         child: Container(
-          height: 60,
-          color: Colors.blue,
-          margin: EdgeInsets.fromLTRB(50, 0, 50, 20),
+          height: 36,
+          width: 84,
+          decoration: BoxDecoration(
+            shape: BoxShape.rectangle,
+            color: Colors.blue,
+            borderRadius: BorderRadius.all(//圆角
+              Radius.circular(20.0),
+            ),
+          ),
           child: Center(
             child: Text(
               textShow,
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
           ),
         ),
