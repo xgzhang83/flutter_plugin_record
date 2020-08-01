@@ -220,15 +220,15 @@ class _VoiceWidgetState extends State<VoiceWidget> {
            moveVoiceView();
            print("update------onLongPressMoveUpdate");
          },
-        child: Container(
+        child: Flexible(
           height: 36,
-          width: 84,
+          //width: 84,
           decoration: BoxDecoration(
             shape: BoxShape.rectangle,
             color: Colors.blue,
-            borderRadius: BorderRadius.all(//圆角
-              Radius.circular(20.0),
-            ),
+            //borderRadius: BorderRadius.all(//圆角
+            //  Radius.circular(20.0),
+            //),
           ),
           child: Center(
             child: Text(
